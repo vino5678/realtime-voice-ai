@@ -1,0 +1,15 @@
+# Runtime dependencies for the OpenVoice adapter. Install AFTER requirements.txt.
+# torch is installed separately (see README) because the right build depends on your hardware.
+# OpenVoice itself is installed with --no-deps (its setup.py pins numpy==1.22.0 etc., which conflict
+# with Python 3.11/3.12). This list is derived from its setup.py minus the web UI / Whisper pieces
+# and has not been verified end to end; if the server log reports a missing package, install it.
+scipy
+librosa>=0.10
+soundfile
+inflect==7.0.0
+unidecode==1.3.7
+eng_to_ipa==0.0.2
+pypinyin==0.50.0
+cn2an==0.5.22
+jieba==0.42.1
+wavmark==0.0.3

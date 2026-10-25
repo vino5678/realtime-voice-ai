@@ -1,0 +1,27 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+# Never commit voice data or models
+storage/
+*.wav
+*.webm
+*.pth
+*.onnx
+models/
+third_party/
+*.pt
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
